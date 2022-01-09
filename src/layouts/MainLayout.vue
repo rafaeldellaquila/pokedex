@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import EssentialLink from "components/EssentialLink.vue";
-
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
@@ -12,16 +10,6 @@ export default defineComponent({
 
   components: {},
 
-  setup() {
-    const leftDrawerOpen = ref(false);
-
-    return {
-      essentialLinks: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value;
-      },
-    };
-  },
+  setup() {},
 });
 </script>
